@@ -26,11 +26,32 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
   if (!room) notFound();
 
   return (
-    <Container className="py-(--space-4xl)">
-      <h1 className="font-display text-[28px] lg:text-[36px] leading-[1.2]">{room.name}</h1>
-      <p className="mt-2 text-(length:--text-body-l) text-(--color-text-muted)">{room.differentiator}</p>
+    <>
+      {/* Fullscreen hero */}
+      <div className="relative h-[70vh] min-h-[420px] w-full overflow-hidden">
+        <ImageWithFallback
+          src={room.heroImage.src}
+          alt={room.heroImage.alt}
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 45%, rgba(0,0,0,0.55) 100%)" }}
+        />
+        <div className="absolute inset-x-0 bottom-0 p-(--space-lg)">
+          <Container>
+            <h1 className="font-display text-[32px] lg:text-[44px] leading-[1.1] text-white">{room.name}</h1>
+            <p className="mt-2 max-w-xl text-(length:--text-body-l) text-white/80">{room.differentiator}</p>
+          </Container>
+        </div>
+      </div>
 
-      <div className="mt-10 grid lg:grid-cols-12 gap-10">
+      <Container className="py-(--space-4xl)">
+      <div className="mt-2 grid lg:grid-cols-12 gap-10">
         {/* RoomGallery — cross-fade only, no parallax (accuracy over atmosphere) */}
         <div className="lg:col-span-7 grid grid-cols-2 gap-3">
           {room.images.map((img, i) => (
@@ -98,6 +119,7 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
           )}
         </div>
       </div>
-    </Container>
+      </Container>
+    </>
   );
 }

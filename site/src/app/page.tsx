@@ -8,7 +8,10 @@ import { Welcome } from "@/components/v2/sections/welcome";
 import { Rooms } from "@/components/v2/sections/rooms";
 import { GardenExperience } from "@/components/v2/sections/garden-experience";
 import { Pool } from "@/components/v2/sections/pool";
+import { Gym } from "@/components/v2/sections/gym";
 import { Dining } from "@/components/v2/sections/dining";
+import { Reception } from "@/components/v2/sections/reception";
+import { BusinessFacilities } from "@/components/v2/sections/business-facilities";
 import { Masaki } from "@/components/v2/sections/masaki";
 import { Stories } from "@/components/v2/sections/stories";
 import { Reserve } from "@/components/v2/sections/reserve";
@@ -34,7 +37,10 @@ export default function Home() {
         <Rooms />
         <GardenExperience />
         <Pool />
+        <Gym />
         <Dining />
+        <Reception />
+        <BusinessFacilities />
         <Masaki />
         <Stories />
         <Reserve />

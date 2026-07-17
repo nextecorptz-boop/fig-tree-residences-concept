@@ -14,7 +14,7 @@ export function DepartureMoment() {
       <Reveal extended>
         <div className="relative h-[60vh] min-h-[420px] w-full">
           <ImageWithFallback
-            src="/images/dining/rooftop-dining-sunset.jpg"
+            src="/media/rooftop-sunset.webp"
             alt="Rooftop at sunset, the last light over the bay"
             fill
             className="object-cover"

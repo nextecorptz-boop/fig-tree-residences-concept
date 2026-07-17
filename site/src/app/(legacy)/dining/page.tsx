@@ -16,7 +16,7 @@ export default function DiningPage() {
     <div className="surface-dusk">
       <AmbientLoop className="relative h-[85vh] min-h-[520px] w-full overflow-hidden">
         <ImageWithFallback
-          src="/images/dining/rooftop-dining-dusk.jpg"
+          src="/media/rooftop-dusk-guests.webp"
           alt="Rooftop restaurant at dusk with string lights, overlooking the bay"
           fill
           priority

@@ -20,21 +20,21 @@ export const amenities: Amenity[] = [
     label: "Swimming Pool",
     description: "A quiet lap in the morning, or a slow float through the afternoon heat — the pool sits at the garden's centre, not tucked behind it.",
     icon: "waves",
-    image: "/images/amenities/pool-daylight.jpg",
+    image: "/media/pool-wide.webp",
   },
   {
     id: "gym",
     label: "Gym",
     description: "A full indoor and outdoor set-up for guests who keep their routine on the road, open at whatever hour suits your day.",
     icon: "dumbbell",
-    image: "/images/amenities/gym-equipment.jpg",
+    image: "/media/gym.webp",
   },
   {
     id: "gardens",
     label: "Gardens & BBQ",
     description: "Mature trees, quiet recesses, and a BBQ area for the evenings you'd rather not leave the residence at all.",
     icon: "leaf",
-    image: "/images/gardens/garden-living-wall.jpg",
+    image: "/media/garden-living-wall.webp",
   },
   {
     id: "conference",
@@ -47,7 +47,7 @@ export const amenities: Amenity[] = [
     label: "Rooftop Restaurant & Bar",
     description: "Dinner, or a sundowner, over the bay and the Yacht Club — the property's own dusk light at its best.",
     icon: "sunset",
-    image: "/images/dining/rooftop-dining-dusk.jpg",
+    image: "/media/rooftop-sunset.webp",
   },
   {
     id: "shopping",

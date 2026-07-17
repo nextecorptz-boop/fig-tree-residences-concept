@@ -66,6 +66,16 @@ export const rooms = {
       note: "Softest of the set. Linen, timber, and very little else.",
     },
     {
+      key: "bedroom-arch-green" as const,
+      name: "The Green Room",
+      note: "Same carved headboard, a cooler palette next door.",
+    },
+    {
+      key: "bedroom-classic-lighthouse" as const,
+      name: "Classic Residence",
+      note: "The property's original finish, toward the garden's older trees.",
+    },
+    {
       key: "kitchenette-bar" as const,
       name: "The Kitchenette",
       note: "Cook for yourself. We will do the shopping if you would rather not.",
@@ -75,7 +85,36 @@ export const rooms = {
       name: "The Balcony",
       note: "Where most guests end up, most evenings.",
     },
+    {
+      key: "bathroom-full-view" as const,
+      name: "The Bathroom",
+      note: "Rain shower, in every apartment.",
+    },
+    {
+      key: "bedroom-classic-attic" as const,
+      name: "The Top Floor",
+      note: "A quieter room, set under the roofline.",
+    },
   ],
+};
+
+export const gym = {
+  label: "04a — The Gym",
+  headline: "Indoor, before the pool",
+  body: "Cardio, free weights, and a mat for the mornings that need it — the one indoor amenity most guests never plan for and end up using anyway.",
+};
+
+export const reception = {
+  label: "The Arrival",
+  headline: "Where the day starts and ends",
+  body: "A small, warm room rather than a lobby — the desk for check-in, and a lounge for the ten minutes before a taxi arrives.",
+};
+
+export const businessFacilities = {
+  label: "Business Facilities",
+  headline: "A small room, for small meetings",
+  body: "The property keeps a private meeting room for guests who need one — the brochure lists it alongside the pool and the gym as a standing amenity.",
+  note: "No photograph of this room exists yet in the property's asset library. This section will carry one the day a real photograph is taken.",
 };
 
 export const garden = {

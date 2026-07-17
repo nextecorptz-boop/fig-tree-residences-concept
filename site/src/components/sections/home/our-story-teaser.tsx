@@ -14,7 +14,7 @@ export function OurStoryTeaser() {
       <Container className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <div className="lg:col-span-7 relative aspect-[4/3] lg:aspect-[16/10]">
           <ImageWithFallback
-            src="/images/our-story/building-facade-daylight.jpg"
+            src="/media/facade-tree.webp"
             alt="Fig Tree Residences building facade among mature trees"
             fill
             className="object-cover"

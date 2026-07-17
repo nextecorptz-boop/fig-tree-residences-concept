@@ -4,15 +4,15 @@
     "subject": "The residence beneath the fig tree",
     "width": 1024,
     "height": 678,
-    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJQBOgB6CTEv3AAD+wgT0MOPKtTKO5t7pyQD/iDSl/x9GipKpJ44q+8/YANEYYbsE5TkuFIFtvstshQe5AsAA",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAoABABoJQBYdhVIFRmAAP7B8L6ntxA+aSO7to8D1YD8VqVhTX5gXRmn4VGVlP1xl/SmEB29kPgAAAA=",
     "bg": 0.965
   },
   {
     "key": "rooftop-sunset",
-    "subject": "Rooftop terrace at sunset",
+    "subject": "Rooftop terrace at golden hour",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAQCdASoQAAsABABoJbAC7ADHVp85QAD+7BKmDFHgN2KWsOuw19cwva1h8+lSuu2tFJtpmUsE3TwyW0phwREFi3R2VeCMmwVacbiiN9Lxa6RrOatqr9O51urWjP+IZx98doAA",
+    "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJbAC7ADG8G85NN4kAP7sMIzyiplhd4bhdh1qFCSQkdqk9ggVbana7iXsaH0TyQcT8GbxrtgKCEICheB6juwdrYlHsQlT+4upfO31MAAAAA==",
     "bg": 0.749
   },
   {
@@ -20,15 +20,15 @@
     "subject": "Living wall and garden seating",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAsABABoJbACdADvOkFRH0AA21cKj/7iVix5fEkLxKmh4Ej5Cgc4YB+A3amXYF9Z0wh8WCfiHrLevir+N5E7d/U+99wb64iW1R9v8TMe3+HEAAA=",
-    "bg": 0.63
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAoABABoJbACdAD1kdAJJAkYgADcmZZ+9aXIkh1O567m7NKfd82D8UqIabhlCaKL6GjcnKLC3Nmw3R/eotSds0bwAAAA",
+    "bg": 0.631
   },
   {
     "key": "garden-lounge",
     "subject": "Garden lounge",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAQCdASoQAAsABABoJbACdABf9GAA/r3RvNVu/VgvJ0KfaL0cU9ZrzT7mfch841ChFhCfyo6ipSdSYzHoA5gUdOqXVR26cunYBKfiLcAAAA==",
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAoABABoJbACdAC/6o44AP6+GXxbSTxaolkaqJ/Xx8QmUW6jl3cZH6bAvUMMlDZZT9eRPaBwbUyjrg0C8nig7TYAR/zsjAAAAA==",
     "bg": 0.373
   },
   {
@@ -36,15 +36,15 @@
     "subject": "Swimming pool, wide",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJbACdEf/ga7nUd7QAP7lvoICqO0te5vh32ojb+g5rvVOhTThQOvqsuuXl1jY6Y24x+QrNN4tgYXYpuxu5L/FPBy2N8CKYJo1/vZl8AA=",
-    "bg": 1.386
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoABABoJbACdEf/ga/KobwAAP7jhwZjJIcayLkqoKOAWR7bndFWjmwg2IDpr0eQhE5k1ZJLHZzo160/MrNLyOv/Aq5Ky+fh87SulWv8rTwAAAA=",
+    "bg": 1.387
   },
   {
     "key": "pool-through-trees",
     "subject": "Pool seen through the trees",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsABABoJbACdADMlkWzwAAA/sGncicPnyvj9Iobx61n0q2HQ6WMV/kK5MVzZVdyficCzhKoHrREh9A3DGK7H1ctYL5prTwIMQPZ8P8vMgAA",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAoABABoJbACdAEJGXvQwAD+0eZNgeDe7z1MOQawJYN6gN5AJQKcuyoOexdWNmweYc0a8EMdy3pj/X8nY0dfrKLwAA==",
     "bg": 1.034
   },
   {
@@ -52,7 +52,7 @@
     "subject": "Breakfast laid in the garden",
     "width": 1024,
     "height": 610,
-    "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoABABoJbACdAECptVY3a7oTAD+kbuesX7S8wguIguZoufmqc7cux5F3O7FqDPzvLYf70rbjapTcZEhv48jvaNt5firrnGpylZBvf7EqAmyB+NjI5ia9h6Hi4fhlqTEcIeAAAA=",
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAQCdASoQAAkABABoJbACdADbnCEHCAD9465+mcnX5URFiPC12lMwUq0F+IyPBHtvHXLvIiJStzmZZsAYhjmobKsbYhDj5l8MAQfsaF9mzWISm0h1ZuBYIWTxYKWAAAA=",
     "bg": 0.948
   },
   {
@@ -60,15 +60,15 @@
     "subject": "Gym",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsABABoJbACdADJU5i/B4AA/rZ4+410+WXeR0e57xiUurL2D+I3tTU/t1NgCZsyqVvSNfL+P8oPjx/QG9hHDUVwymWTtrddPXC2wRfeHfYib95mzNAsAAA=",
-    "bg": 0.733
+    "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAoABABoJbACdADv3g9ZJJgA/rZ46hkZKIJCYBN41dgl72j/HNSB/ljRnSrNbFl7hq+1WplQGJhehDO0X0S47WupTrmtcLbBF94d9iJv8EJXCwAAAA==",
+    "bg": 0.732
   },
   {
     "key": "living-balcony",
     "subject": "Apartment living room and balcony",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJbAC7ADwtkIx9KgAAP7V3WcTgUBVhoVz0ARU6hwjlpje5njST4DbGutVQrJT6EKCBYEcnSAq7FMkfpa4cwPcVae2oZxgOu4b6rpUgAA=",
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoABABoJQBdgCLvQCU/mSX9AAD+1eCRSTfzS/9SWAD1X1DHtQVtfwdGV/pVvnjLNJ1O3SILSgNrIy0WAdZF+GxRZCncCFgqi+1l+2lYfwAA",
     "bg": 0.879
   },
   {
@@ -76,7 +76,7 @@
     "subject": "Apartment living room with desk",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAQCdASoQAAsABABoJbACdAChVYUwAP62eFgDMDRRYnla97L+06HT/DyoDWRXN4tgiXoDfI+LZFRh+o77Ams7eM7FaiATP8z5F7R2eyv1OH3qzMnZOPQnNyIpjqKfcIgMEpY64n9Vf9C0gAA=",
+    "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQAAoABABoJaACdAYvXqhtxwmkuAAA/plnN5aVO9UHYQs5cRaJ0eiVX2nskGnRBWqlbIBzXbB87Sh3zMoAoZSrciSCaX0/hdata3ej9CaxG0QX0VC3F8O88WLNoSLsZ0X1V/1eAAA=",
     "bg": 0.858
   },
   {
@@ -84,7 +84,7 @@
     "subject": "Interior lounge, low light",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAwABABoJYwC7AD8F9blfhPGUAD+wqhDRga84UOXDP+tABcdvG60J2jFQNfj89clm/EVRQUDPb091gG4J26S4+/pC+r4I3F+7I0oSive+AAA",
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAwABABoJYwC7AECmWUwK8HAzYAA/sKoQ0WhSPDZCaWqpYJYs/GXtSbKv/J/vhWRL/NVMA0osKs7AWeb+TRgr6UgBCSUYgDilHm8RDTmhIAA",
     "bg": 0.847
   },
   {
@@ -92,7 +92,7 @@
     "subject": "Kitchenette with breakfast bar",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAsABABoJQBOgMYdykxHShXUAAD+2Bj4ti/CQ38F+MBciXCxWnxRoueR3mQqU/786R61u0rtzycfxbVpjVi1/h/hbQ6n4hclkJ4Y9EAEC+31y51gUKB8Sdc6hGEc4BIAAA==",
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwAgCdASoQAAoABABoJQBOkCYimw4mfGQgAAD+2A2ruMkgZ8poTOaQ7c9qR1tAYm5GLpdzRabDPWh7LzObX9LrLndQB3m/PxfwYzEL+oy3e0tOdIU1vItOT+8b/g/LfTgDIAAA",
     "bg": 0.931
   },
   {
@@ -100,39 +100,39 @@
     "subject": "Kitchen counter detail",
     "width": 1024,
     "height": 683,
-    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJZACdAB8x3GXAADiLBIRv9zBBq6ERcZb5gmrR+EIGXUdX42ZmfM4JIwU3sALi3Z1HeLiKh7QkqQbL8LqAAAA",
-    "bg": 0.852
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAoABABoJYgCdAEWBXGlS/gAAOIqGsCDhMo61l3gtaTYv0MzAMo7hEdoQBon+COF8mLY+WBRgdffAAA=",
+    "bg": 0.855
   },
   {
     "key": "logo-sign",
     "subject": "Fig Tree signboard",
     "width": 858,
     "height": 1326,
-    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoQABkAPxGCtFIsKaUisAgBgCIJbACdACHWVbzncVIeAAD+uRo7vSp7dsgFygqGWAm3MKEjfT19yNlejt8SuAXiPaYYW+yJ6wgAlg73B4iwq4CJ7SrWefenpuRyQ9sHOLB3r/9gdiAAAA==",
-    "bg": 0.907
+    "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoQABgAPxFysFAsJqSisAgBgCIJagCdACHWwDeuy/0BNQAA/rkZysV7S+xxVNE90SQtIJwv19yNDlfoaG0YbqMmhoXfXTksAmOakzG2/8y1geYw6d0pEQAA",
+    "bg": 0.92
   },
   {
     "key": "staff-portrait",
     "subject": "Fig Tree team member",
     "width": 1054,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJQBdiP/wOzs031MiAP7TXnrlw1inCO/+U7B0wAlc7BXqzADhJNRGxf0bl3etqp8j4ubQACzUj+8dOnM6qdlZOgAAAA==",
-    "bg": 0.903
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAoABABoJQBWCP/wOzm+taamAAD+017v9LrCIHICbkF2F841tjhv9ahA++WiSrA25yDbb3PP+h0rApXdJ9MknhXM6AAA",
+    "bg": 0.902
   },
   {
     "key": "bedroom-arch-palm",
     "subject": "Bedroom, arched palm headboard",
     "width": 1054,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAwAgCdASoQAAsABABoJYgCsAEXfSaDEoz4qAD+kXwEnOQc9QewBGsVtLlCqNL3rzMNzfllEfwXJO/5UKhAi16FQAA=",
-    "bg": 0.882
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAoABABoJYgCsAEXYd2lwAD+siYUWR0DVmahtXTR8nyKHCOy0lI+CvYTnIztxuEKQmSs+CeK8WgA",
+    "bg": 0.883
   },
   {
     "key": "bedroom-white-arch",
     "subject": "Bedroom, white arched headboard",
     "width": 1054,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAsABABoJQAAS3mmfRODKAAA/NicgbSw1LM9SDLg3lzJ92Kbz81YZDcIFhPoV79H7AFwAAA=",
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAoABABoJYwCw7Dx/K2ocMAA/NibxlsGYhuJxxOFv961SaSOocx8lGl9cXC4AAA=",
     "bg": 0.921
   },
   {
@@ -140,31 +140,31 @@
     "subject": "Bedroom, green bedspread",
     "width": 1054,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAsABABoJaACdABqrKjMAP6W5xvi5RICsfQziqlZR8r++zEMhFVG/0AYiWBdgw1tJ4BW3vOZ6vNnhkjCUB4i7eRwAA==",
-    "bg": 0.859
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAoABABoJYgCdADjSstw22WAAP6Nr7MOzGvJgVY8UIMZSQB/AORw59y+YZC7f3N33z+KLlBUAAAA",
+    "bg": 0.856
   },
   {
     "key": "bedroom-blue",
     "subject": "Bedroom, blue cushion",
     "width": 967,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAwABABoJbACdADp86jJbTAAAP7tnsLXPzQZME87llBXRy7Q3F677zXBGrbr3HGgyOUBWM0K4hU7m4rLJVfvX4RUci4AAAA=",
-    "bg": 0.808
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAsABABoJbACdAD2PqocB1Y/AAD+7Z7CkKp9DVLQ8ttXcSxL90KUmEl3/O5+JuPlWhTYnhb3RV2aNfB7guoK+3t6xKFtpxAAAA==",
+    "bg": 0.807
   },
   {
     "key": "kitchenette-full",
     "subject": "Kitchenette, full view",
     "width": 1054,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJZACdADR3Qv/jqzBAAD+lNFkIkyrABZTHbUBkHzRtLeI8AJkun1NgIhzRmniZRwTcyQflGm4xBcQRH72kxukjyrKJzp8AAA=",
-    "bg": 0.894
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAoABABoJYgC7ADREPk6a5wAAP6UQTL3UlQSnQc065z4Mpy2ZZzgohDcIA7I0D9I+628b/vq4LcknSoibz/ngKyhMAAA",
+    "bg": 0.896
   },
   {
     "key": "living-cream",
     "subject": "Living room, cream sofas",
     "width": 1054,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsABABoJYgC7AEO9axzZQAA/q9t0x0AMkXUeHIYgllEz3QlXX8jEWhLcIKj+PopHS/AbldaA6iS56YGUgAA",
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAoABABoJQBdgCHerhju3AAA/sOOrBdkhNWJuy5hdIV2P2xGC1i4XZYq1r+itAQvdyuXN6QAAA==",
     "bg": 0.876
   },
   {
@@ -172,7 +172,127 @@
     "subject": "Living room with writing desk",
     "width": 1054,
     "height": 703,
-    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAsABABoJbAC7ADvyQc1U38AAP6vnPdhIdngtZ2CPo1lguI/aZY2s0/cIG1Yn2dDxzrS5jpDBIvwIAA=",
-    "bg": 0.83
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAoABABoJbACdADsnDDVgAD+r5z3Ys87FT5kWOqq5a/LGZBehCnwsnJIx+dNvbdjG+RtwlNb6K6vhcAAAA==",
+    "bg": 0.831
+  },
+  {
+    "key": "dining-bar-detail",
+    "subject": "Rooftop bar, wine service detail",
+    "width": 975,
+    "height": 768,
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAwABABoJZgCdIIjF/gT/sbZgAD+0nbqpp260MrWZeBt1TtngX7kW+lvTsHPXTR6bdvjPQw9PwHVHN+D8qrEYRTSfXE+jmqnSIHRhvnEsMKIAAA=",
+    "bg": 1.074
+  },
+  {
+    "key": "rooftop-dusk-guests",
+    "subject": "Rooftop restaurant at dusk, guests seated",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAoABABoJbACsH8AFmRJKmCGoAD+6ZExxmxumvVWEkAmfqT5rp0qtMw2Kx4IbdgKtTexy8j4fp0py3VwljTdzUQcP8hechoGhB7nUPZbBQNltd/hFzf83F0fn+0AAAA=",
+    "bg": 0.926
+  },
+  {
+    "key": "rooftop-golden-hour",
+    "subject": "Rooftop terrace, golden hour, tables set",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJbAC7ADG8G85NN4kAP7sMIzyiplhd4bhdh1qFCSQkdqk9ggVbana7iXsaH0TyQcT8GbxrtgKCEICheB6juwdrYlHsQlT+4upfO31MAAAAA==",
+    "bg": 0.749
+  },
+  {
+    "key": "living-room-alt-2",
+    "subject": "Living room, alternate unit",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQAAoABABoJaACdAYvXqhtxwmkuAAA/plnN5aVO9UHYQs5cRaJ0eiVX2nskGnRBWqlbIBzXbB87Sh3zMoAoZSrciSCaX0/hdata3ej9CaxG0QX0VC3F8O88WLNoSLsZ0X1V/1eAAA=",
+    "bg": 0.858
+  },
+  {
+    "key": "living-room-alt-3",
+    "subject": "Living room, alternate unit",
+    "width": 1024,
+    "height": 768,
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAwABABoJYwC7AECmWUwK8HAzYAA/sKoQ0WhSPDZCaWqpYJYs/GXtSbKv/J/vhWRL/NVMA0osKs7AWeb+TRgr6UgBCSUYgDilHm8RDTmhIAA",
+    "bg": 0.847
+  },
+  {
+    "key": "pool-garden-angle",
+    "subject": "Swimming pool, garden angle",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAoABABoJagCdH8AGEnAG8zA3YAA/uYEZbJHdlyUT9ifPjKfrz3OzOgzNVf129vLZ9dcHbfCb06yQMzumeU6q7og9q7gy0r4AdGE00bcEqteiAA=",
+    "bg": 1.006
+  },
+  {
+    "key": "reception-lounge",
+    "subject": "Reception lounge seating",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAQCdASoQAAoABABoJbACdAB8kQhugAD94kKIBrif7gXvb42tUqXo577vp2ZYH355DFJuUwj5Vs31C/8jfpkaEkWDtI5HdOKmZBJ33CT9UyToPkYR0vRuGU4ybcmbcAA=",
+    "bg": 0.682
+  },
+  {
+    "key": "reception-desk",
+    "subject": "Reception desk",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAoABABoJbACdADp0FmjPd8AAPwbAKT9yMTmqGoPDey/PUvc1sJ9jjFGtPBFhY8y8/sEzzHIF+62jX9Upl7RX4qy3+jlAWj/frnqfl7zLaq5Qs/Bs/XZbO+3Qz1yj+4AAA==",
+    "bg": 0.67
+  },
+  {
+    "key": "reception-detail",
+    "subject": "Reception, alternate angle",
+    "width": 1024,
+    "height": 744,
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJbACdADPJuVyj9b8AP7UtGe57/azyCKgc3LInLCg2ZMm9KXMyoryqyez8wrbLS5Bo/ltKGv9OgvZTq+wq25F+EppcuGKYY8pzprYAAA=",
+    "bg": 0.623
+  },
+  {
+    "key": "bedroom-classic-attic",
+    "subject": "Classic Residence, top-floor bedroom",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAoABABoJQBOgBub9QILgADON4jpYezMtOmCRMkluz666eD+neHpzU5/1mENf5XH7F0Paz7i/pKrDc8mzucnUuJ52YFuJLcAAA==",
+    "bg": 0.95
+  },
+  {
+    "key": "bathroom-full-view",
+    "subject": "Bathroom, full view",
+    "width": 513,
+    "height": 768,
+    "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBACdASoQABcAPxFysFAsJqSisAgBgCIJaAC7ACLKRI25iV2yMlps4BlMAAD945umy1pjrzA7OFTzoq/Ei6yzdF/i77erbCYUTM3El3kgRx+0BnKwZBNB4xvIB3Cd/1zpMnRcE96Qm69UYs9Logg5iCT7T/K0NnRR5EgW2OSITu47Xg/b6XfA8w/3rtBoyYZ5Unp8nKv30aHvAzCYAA==",
+    "bg": 0.814
+  },
+  {
+    "key": "garden-lounge-bench",
+    "subject": "Garden lounge bench seating",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAoABABoJbACdAC/6o44AP6+GXxbSTxaolkaqJ/Xx8QmUW6jl3cZH6bAvUMMlDZZT9eRPaBwbUyjrg0C8nig7TYAR/zsjAAAAA==",
+    "bg": 0.373
+  },
+  {
+    "key": "pool-exterior-1",
+    "subject": "Pool and building exterior",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoABABoJbACdEf/ga/KobwAAP7jhwZjJIcayLkqoKOAWR7bndFWjmwg2IDpr0eQhE5k1ZJLHZzo160/MrNLyOv/Aq5Ky+fh87SulWv8rTwAAAA=",
+    "bg": 1.387
+  },
+  {
+    "key": "pool-exterior-2",
+    "subject": "Pool and building exterior, alternate",
+    "width": 1024,
+    "height": 683,
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAoABABoJbACdAEJGXvQwAD+0eZNgeDe7z1MOQawJYN6gN5AJQKcuyoOexdWNmweYc0a8EMdy3pj/X8nY0dfrKLwAA==",
+    "bg": 1.034
+  },
+  {
+    "key": "bedroom-classic-lighthouse",
+    "subject": "Classic Residence bedroom",
+    "width": 1024,
+    "height": 649,
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAoABABoJQBOgBnxgq4j3qAA/prErnPKtzcpcbl6/z4d2fyBNQhb27hOkJcdGw2ehkmzO1iumL7dDxHzTNtcywz5v8bQL4E0j8cXgDKmcnJlgAA=",
+    "bg": 0.904
   }
 ]

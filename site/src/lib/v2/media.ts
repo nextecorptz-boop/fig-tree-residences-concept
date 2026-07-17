@@ -33,7 +33,22 @@ export type MediaKey =
   | "bedroom-blue"
   | "kitchenette-full"
   | "living-cream"
-  | "living-cream-desk";
+  | "living-cream-desk"
+  | "dining-bar-detail"
+  | "rooftop-dusk-guests"
+  | "rooftop-golden-hour"
+  | "living-room-alt-2"
+  | "living-room-alt-3"
+  | "pool-garden-angle"
+  | "reception-lounge"
+  | "reception-desk"
+  | "reception-detail"
+  | "bedroom-classic-attic"
+  | "bathroom-full-view"
+  | "garden-lounge-bench"
+  | "pool-exterior-1"
+  | "pool-exterior-2"
+  | "bedroom-classic-lighthouse";
 
 export type MediaEntry = {
   key: MediaKey;

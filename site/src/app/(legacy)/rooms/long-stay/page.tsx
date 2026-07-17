@@ -26,8 +26,8 @@ export default function LongStayPage() {
         </div>
         <div className="lg:col-span-5 lg:col-start-8 relative aspect-[4/3]">
           <ImageWithFallback
-            src="/images/rooms/kitchenette-breakfast-bar.jpg"
-            alt="Kitchenette breakfast bar, suited to an extended stay"
+            src="/media/kitchen-detail.webp"
+            alt="Kitchen breakfast bar, suited to an extended stay"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 42vw, 100vw"

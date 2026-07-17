@@ -10,7 +10,7 @@ export function GardensTeaser() {
       <ScrollParallax className="absolute inset-0">
         <div className="relative h-[calc(70vh+120px)] min-h-[540px] -mt-[60px] w-full">
           <ImageWithFallback
-            src="/images/gardens/garden-living-wall.jpg"
+            src="/media/garden-living-wall.webp"
             alt="Living wall of tropical greenery in the garden"
             fill
             className="object-cover"

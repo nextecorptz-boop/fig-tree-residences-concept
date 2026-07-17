@@ -25,12 +25,21 @@ export type RoomType = {
   bedConfiguration: string;
   occupancy: number;
   features: string[];
+  heroImage: { src: string; alt: string };
   images: { src: string; alt: string }[];
   longStayEligible: boolean;
   nightlyRateUSD: number;
   isPlaceholderRate: true;
   needsClientConfirmation: boolean;
 };
+
+/**
+ * Image paths below point at the colour-corrected, correctly-labelled set in
+ * public/media/ (see lib/v2/media.ts and docs/PHOTO_USAGE_REPORT.md) — not at
+ * public/images/, whose filenames are roughly half wrong (a file called
+ * "kitchenette-styled.avif" is in fact a bedroom; "bathroom-styled.jpg" is the
+ * garden wall). Every image below was assigned by looking at the photograph.
+ */
 
 export const roomTypes: RoomType[] = [
   {
@@ -53,11 +62,13 @@ export const roomTypes: RoomType[] = [
       "Daily housekeeping",
       "Laundry facilities available",
     ],
+    heroImage: { src: "/media/bedroom-arch-palm.webp", alt: "Garden View Studio, arched palm-motif headboard, queen bed" },
     images: [
-      { src: "/images/rooms/bedroom-arched-headboard-1.avif", alt: "Garden View Studio bedroom, arched palm-motif headboard, queen bed" },
-      { src: "/images/rooms/bedroom-arched-headboard-2.avif", alt: "Garden View Studio, alternate angle of the arched headboard and sitting area" },
-      { src: "/images/rooms/kitchenette-styled.avif", alt: "Garden View Studio's fully equipped kitchenette" },
-      { src: "/images/rooms/bathroom-styled.jpg", alt: "Garden View Studio bathroom with rain shower" },
+      { src: "/media/bedroom-arch-palm.webp", alt: "Garden View Studio bedroom, arched palm-motif headboard, queen bed" },
+      { src: "/media/bedroom-arch-green.webp", alt: "Garden View Studio, alternate unit, same carved headboard" },
+      { src: "/media/bedroom-white-arch.webp", alt: "Garden View Studio, the white-finish variant" },
+      { src: "/media/kitchenette-full.webp", alt: "Garden View Studio's fully equipped kitchenette" },
+      { src: "/media/bathroom-full-view.webp", alt: "Garden View Studio bathroom with rain shower" },
     ],
     longStayEligible: true,
     nightlyRateUSD: 145,
@@ -84,10 +95,13 @@ export const roomTypes: RoomType[] = [
       "Daily housekeeping",
       "Laundry facilities available",
     ],
+    heroImage: { src: "/media/bedroom-classic-lighthouse.webp", alt: "Classic Residence bedroom, original finish" },
     images: [
-      { src: "/images/rooms/bedroom-wide-view.avif", alt: "Classic Residence bedroom, wide view" },
-      { src: "/images/rooms/kitchenette-counter.jpg", alt: "Classic Residence kitchenette counter" },
-      { src: "/images/rooms/kitchenette-breakfast-bar.jpg", alt: "Classic Residence breakfast bar" },
+      { src: "/media/bedroom-classic-lighthouse.webp", alt: "Classic Residence bedroom, original finish" },
+      { src: "/media/bedroom-classic-attic.webp", alt: "Classic Residence, top-floor variant under the roofline" },
+      { src: "/media/kitchenette-bar.webp", alt: "Classic Residence kitchenette counter" },
+      { src: "/media/kitchen-detail.webp", alt: "Classic Residence breakfast bar" },
+      { src: "/media/bathroom-full-view.webp", alt: "Classic Residence bathroom with rain shower" },
     ],
     longStayEligible: true,
     nightlyRateUSD: 125,

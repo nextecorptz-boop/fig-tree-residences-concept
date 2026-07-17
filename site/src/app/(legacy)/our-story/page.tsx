@@ -24,7 +24,7 @@ export default function OurStoryPage() {
         <div className="mt-10 grid lg:grid-cols-12 gap-10 items-center">
           <Reveal className="lg:col-span-7 relative aspect-[4/3] lg:aspect-[16/10]">
             <ImageWithFallback
-              src="/images/our-story/staff-member-portrait.avif"
+              src="/media/staff-portrait.webp"
               alt="A smiling Fig Tree Residences staff member in branded uniform"
               fill
               className="object-cover"

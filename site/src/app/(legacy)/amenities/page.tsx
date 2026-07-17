@@ -37,7 +37,7 @@ export default function AmenitiesPage() {
           <Card className="p-0 overflow-hidden">
             <Link href="/gardens" className="block">
               <div className="relative aspect-[16/10]">
-                <ImageWithFallback src="/images/gardens/garden-living-wall.jpg" alt="Living wall of tropical greenery" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
+                <ImageWithFallback src="/media/garden-living-wall.webp" alt="Living wall of tropical greenery" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
               </div>
               <div className="p-6">
                 <p className="text-(length:--text-heading-3) font-semibold">Explore the Garden</p>
@@ -47,7 +47,7 @@ export default function AmenitiesPage() {
           <Card className="p-0 overflow-hidden">
             <Link href="/dining" className="block">
               <div className="relative aspect-[16/10]">
-                <ImageWithFallback src="/images/dining/rooftop-dining-dusk.jpg" alt="Rooftop restaurant at dusk" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
+                <ImageWithFallback src="/media/rooftop-dusk-guests.webp" alt="Rooftop restaurant at dusk" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
               </div>
               <div className="p-6">
                 <p className="text-(length:--text-heading-3) font-semibold">Explore Dining</p>

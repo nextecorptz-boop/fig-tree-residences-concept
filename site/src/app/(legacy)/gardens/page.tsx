@@ -19,7 +19,7 @@ export default function GardensPage() {
         <ScrollParallax className="absolute inset-0" speed={0.2}>
           <div className="relative h-[calc(85vh+160px)] min-h-[680px] -mt-[80px] w-full">
             <ImageWithFallback
-              src="/images/gardens/garden-living-wall.jpg"
+              src="/media/garden-living-wall.webp"
               alt="Living wall of tropical greenery in the garden"
               fill
               priority
@@ -38,7 +38,7 @@ export default function GardensPage() {
 
       <div className="relative h-[60vh] min-h-[400px] w-full">
         <ImageWithFallback
-          src="/images/gardens/garden-rattan-seating.jpg"
+          src="/media/garden-lounge-bench.webp"
           alt="Rattan garden seating beneath mature trees"
           fill
           className="object-cover"
