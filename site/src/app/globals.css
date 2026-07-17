@@ -1,0 +1,393 @@
+@import "tailwindcss";
+
+/*
+ * FIG TREE RESIDENCES — v2 design system.
+ *
+ * The palette is sampled, not invented. The greens come from the property's own
+ * signboard (measured #006048 deep / #00c0a8 bright), the terracotta from the
+ * rooftop tiles, the cream from the apartment walls once the yellow cast was
+ * corrected out. The brief asked for "deep forest green" — the brand is
+ * actually teal-green, and matching the real building beats matching the brief.
+ */
+
+:root {
+  /* Green — the fig tree itself */
+  --ft-abyss: #04120f;
+  --ft-forest: #07231d;
+  --ft-canopy: #0b3a30;
+  --ft-emerald: #0e5647;
+  --ft-teal: #1b8c79;
+  --ft-verdigris: #3fb39c;
+  --ft-sage: #9db5a6;
+
+  /* Warm neutrals — walls, travertine, linen */
+  --ft-cream: #f5f0e6;
+  --ft-linen: #ede5d8;
+  --ft-travertine: #ded2be;
+  --ft-stone: #c3b49c;
+
+  /* Earth and light */
+  --ft-terracotta: #b4614a;
+  --ft-clay: #d08a6a;
+  --ft-wood: #8a5a3b;
+  --ft-gold: #c8a44d;
+  --ft-sun: #e9a85c;
+  --ft-pool: #2e86a0;
+  --ft-mist: #d6e0db;
+  --ft-ink: #10201c;
+  /* Caption/meta text on the light surfaces. Travertine (--ft-stone) is the
+     right colour for this job and cannot do it: at full opacity it measures
+     1.79:1 on cream, so it fails WCAG AA by a mile at any alpha. This is the
+     same warm stone family taken down until it actually passes (5.44:1 on
+     cream, 4.94:1 on linen). --ft-stone stays, for rules and borders only. */
+  --ft-bark: #6f5f45;
+
+  /* Semantic */
+  --surface-canvas: var(--ft-cream);
+  --surface-deep: var(--ft-forest);
+  --surface-abyss: var(--ft-abyss);
+  --text-primary: var(--ft-ink);
+  --text-inverse: var(--ft-cream);
+  /* 68% — measured. 58% landed at 4.03:1 on cream, just under AA. */
+  --text-muted: color-mix(in srgb, var(--ft-ink) 68%, transparent);
+  --text-caption: var(--ft-bark);
+  --text-inverse-muted: color-mix(in srgb, var(--ft-cream) 62%, transparent);
+  --hairline: color-mix(in srgb, var(--ft-stone) 55%, transparent);
+  --hairline-inverse: color-mix(in srgb, var(--ft-sage) 26%, transparent);
+
+  /* Motion — slow. Nothing here should feel eager. */
+  --ease-settle: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-quiet: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-quick: 240ms;
+  --t-settle: 520ms;
+  --t-reveal: 900ms;
+  --t-arrive: 1500ms;
+
+  /* ---- Legacy aliases -------------------------------------------------
+     The pre-v2 routes under app/(legacy) still reference these names. Kept
+     so those pages keep compiling and rendering sanely; they are not part
+     of the v2 system and shouldn't be used by new work. */
+  --teal-deep: var(--ft-canopy);
+  --teal-bright: var(--ft-teal);
+  --terracotta-base: var(--ft-terracotta);
+  --terracotta-soft: var(--ft-clay);
+  --cream-base: var(--ft-cream);
+  --cream-deep: var(--ft-linen);
+  --sand-stone: var(--ft-stone);
+  --navy-accent: #26405a;
+  --ink-primary: var(--ft-ink);
+  --ink-muted: #4c5652;
+  --white-pure: #ffffff;
+  --color-surface-canvas: var(--ft-cream);
+  --color-surface-raised: var(--ft-linen);
+  --color-surface-dusk: var(--ft-canopy);
+  --color-text-primary: var(--ft-ink);
+  --color-text-inverse: var(--ft-cream);
+  --color-text-muted: #4c5652;
+  --color-accent-primary: var(--ft-teal);
+  --color-accent-primary-text: var(--ft-canopy);
+  --color-accent-secondary: var(--ft-terracotta);
+  --color-border-hairline: var(--hairline);
+  --color-feedback-success: color-mix(in srgb, var(--ft-teal) 55%, var(--ft-cream));
+  --color-feedback-error: color-mix(in srgb, var(--ft-terracotta) 80%, #4c5652 10%);
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+  --space-6xl: 192px;
+  --container-max: 1440px;
+  --container-content: 1120px;
+  --margin-desktop: 80px;
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-whisper: 0 1px 2px rgba(7, 35, 29, 0.04), 0 2px 8px rgba(7, 35, 29, 0.04);
+  --shadow-lifted: 0 4px 12px rgba(7, 35, 29, 0.08), 0 8px 24px rgba(7, 35, 29, 0.06);
+  --shadow-floating: 0 12px 32px rgba(7, 35, 29, 0.12);
+  --ease-quiet-legacy: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-instant: 120ms;
+  --motion-quick: 200ms;
+  --motion-settle: 450ms;
+  --motion-reveal: 700ms;
+  --motion-arrive: 1200ms;
+  --motion-ambient: 6000ms;
+}
+
+@theme inline {
+  --color-abyss: var(--ft-abyss);
+  --color-forest: var(--ft-forest);
+  --color-canopy: var(--ft-canopy);
+  --color-emerald: var(--ft-emerald);
+  --color-teal: var(--ft-teal);
+  --color-verdigris: var(--ft-verdigris);
+  --color-sage: var(--ft-sage);
+  --color-cream: var(--ft-cream);
+  --color-linen: var(--ft-linen);
+  --color-travertine: var(--ft-travertine);
+  --color-stone: var(--ft-stone);
+  --color-terracotta: var(--ft-terracotta);
+  --color-clay: var(--ft-clay);
+  --color-wood: var(--ft-wood);
+  --color-gold: var(--ft-gold);
+  --color-sun: var(--ft-sun);
+  --color-pool: var(--ft-pool);
+  --color-mist: var(--ft-mist);
+  --color-ink: var(--ft-ink);
+  --color-bark: var(--ft-bark);
+
+  --color-surface-canvas: var(--surface-canvas);
+  --color-surface-dusk: var(--color-surface-dusk);
+  --color-text-primary: var(--text-primary);
+  --color-text-inverse: var(--text-inverse);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent-primary: var(--color-accent-primary);
+  --color-accent-primary-text: var(--color-accent-primary-text);
+  --color-accent-secondary: var(--color-accent-secondary);
+  --color-border-hairline: var(--color-border-hairline);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-feedback-success: var(--color-feedback-success);
+  --color-feedback-error: var(--color-feedback-error);
+  --color-teal-deep: var(--teal-deep);
+  --color-teal-bright: var(--teal-bright);
+  --color-terracotta-base: var(--terracotta-base);
+  --color-terracotta-soft: var(--terracotta-soft);
+  --color-cream-base: var(--cream-base);
+  --color-cream-deep: var(--cream-deep);
+  --color-sand-stone: var(--sand-stone);
+  --color-navy-accent: var(--navy-accent);
+
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-jost);
+
+  --spacing-xs: var(--space-xs);
+  --spacing-sm: var(--space-sm);
+  --spacing-md: var(--space-md);
+  --spacing-lg: var(--space-lg);
+  --spacing-xl: var(--space-xl);
+  --spacing-2xl: var(--space-2xl);
+  --spacing-3xl: var(--space-3xl);
+  --spacing-4xl: var(--space-4xl);
+  --spacing-5xl: var(--space-5xl);
+  --spacing-6xl: var(--space-6xl);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --shadow-whisper: var(--shadow-whisper);
+  --shadow-lifted: var(--shadow-lifted);
+  --shadow-floating: var(--shadow-floating);
+
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1440px;
+  --container-max: var(--container-max);
+  --container-content: var(--container-content);
+}
+
+@layer base {
+  * {
+    border-color: var(--hairline);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--surface-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+    font-synthesis-weight: none;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+    font-weight: 300;
+    letter-spacing: -0.015em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ft-verdigris);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--ft-emerald);
+    color: var(--ft-cream);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Editorial type ------------------------------------------------------ */
+
+  /* The hero line. Tuned to sit just short of the viewport edge at every
+     width, so the canopy below it is never crowded. */
+  .type-display {
+    font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(2.75rem, 7.5vw, 7.5rem);
+    line-height: 0.94;
+    letter-spacing: -0.03em;
+  }
+
+  .type-headline {
+    font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 4.6vw, 4.25rem);
+    line-height: 1.04;
+    letter-spacing: -0.022em;
+  }
+
+  .type-title {
+    font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 2.4vw, 2.25rem);
+    line-height: 1.16;
+    letter-spacing: -0.015em;
+  }
+
+  /* Small-caps label. The workhorse of the whole layout — it's what makes a
+     page read as a magazine rather than an app. */
+  .type-label {
+    font-family: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 0.6875rem;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+  }
+
+  .type-body {
+    font-size: clamp(1rem, 1.05vw, 1.125rem);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .type-lede {
+    font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+  }
+
+  /* Surfaces ------------------------------------------------------------ */
+
+  .shell {
+    width: 100%;
+    max-width: 1560px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 5.5rem);
+  }
+
+  .shell-narrow {
+    width: 100%;
+    max-width: 1160px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 5.5rem);
+  }
+
+  /* The arch that used to live here is gone. A border-radius can only ever
+     describe an arc, and the crown of a fig tree is a lobed, off-symmetric
+     mound — no combination of radii gets there. Image frames now clip to a
+     generated canopy silhouette instead: see lib/v2/tree.ts and the
+     CanopyFrame primitive. */
+
+  .hairline {
+    border-color: var(--hairline);
+  }
+
+  .glass {
+    background: color-mix(in srgb, var(--ft-cream) 10%, transparent);
+    backdrop-filter: blur(22px) saturate(1.4);
+    -webkit-backdrop-filter: blur(22px) saturate(1.4);
+    border: 1px solid color-mix(in srgb, var(--ft-cream) 16%, transparent);
+  }
+
+  .glass-light {
+    background: color-mix(in srgb, var(--ft-cream) 72%, transparent);
+    backdrop-filter: blur(22px) saturate(1.2);
+    -webkit-backdrop-filter: blur(22px) saturate(1.2);
+    border: 1px solid color-mix(in srgb, var(--ft-stone) 40%, transparent);
+  }
+
+  /* Film grain. Doing real work, not decoration: every photograph in this
+     library tops out at ~1024px, and a fine grain over a graded image reads
+     as intent rather than as an upscale. */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.28;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 180px;
+  }
+
+  .vignette::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(120% 90% at 50% 45%, transparent 40%, color-mix(in srgb, var(--ft-abyss) 70%, transparent) 100%);
+  }
+
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+}
+
+/* The entrance is server-rendered so it covers the page from the first paint
+   rather than appearing after hydration and covering content that already
+   painted. Two audiences must never be trapped behind it, and neither can be
+   detected on the server — so both are handled here, at paint time, with no JS
+   involved. See components/v2/chrome/seed-loader.tsx. */
+@media (prefers-reduced-motion: reduce) {
+  .seed-loader { display: none !important; }
+}
+
+/* Ken Burns. The brief asked for a looping video with slow camera movement;
+   the property has no footage at all, so this is a still under a very slow
+   push. Kept under 6% travel — past that it reads as a slideshow effect
+   rather than as a camera. */
+@keyframes ft-drift {
+  from { transform: scale(1) translate3d(0, 0, 0); }
+  to   { transform: scale(1.06) translate3d(0, -1.2%, 0); }
+}
+
+.motion-drift {
+  animation: ft-drift 26s var(--ease-quiet) infinite alternate;
+}
+
+@keyframes ft-sway {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50%      { transform: translate3d(0, -14px, 0) rotate(2.5deg); }
+}
+
+@keyframes ft-fade-up {
+  from { opacity: 0; transform: translate3d(0, 18px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Hide the native cursor only where a real pointer is driving, and only on
+   viewports that get the custom cursor. Touch keeps its default behaviour. */
+@media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
+  .cursor-hidden, .cursor-hidden * {
+    cursor: none !important;
+  }
+}

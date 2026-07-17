@@ -1,0 +1,40 @@
+# Fig Tree Residences — Current Website Analysis
+### Phase 1A: Discovery & Asset Intelligence
+
+No screenshots of the live website were supplied inside the project folder (the `website` and `assets/website` subfolders are empty), so this audit was performed by directly fetching and reading the live public site at the URL the property itself advertises. This is a content and structural audit, not a code review — no HTML, CSS, or JavaScript was inspected, and no rendered-pixel screenshot testing (mobile breakpoints, load speed, on-screen contrast) was performed. A live, in-browser pass is recommended as a follow-up task and is noted in `NEXT_PHASE.md`.
+
+## 1. Platform and Domain Situation
+
+The live site is built on Wix (confirmed by its meta-generator tag and static.wixstatic.com media hosting) and is published at **figtreeresidences.com**. A second domain, **figtree.co.tz**, is used for the property's email addresses (`info@figtree.co.tz`, `reservations@figtree.co.tz`) and appears in the printed brochure as the primary web address, yet on the live Wix site it is buried as the destination behind a mislabeled social icon (see below) rather than being the site's actual domain. This is a real point of confusion: the brochure trains guests to look for `figtree.co.tz`, while the actual working website lives at a different address. Which domain the business intends to be its permanent, primary address — and who currently controls the DNS and registration for each — is an open question for the next phase.
+
+## 2. Site Structure
+
+The navigation is consistent across every page: Home, Rooms & Rates, Photo Gallery, Activities, About Us, Contact, and Blog, plus a "More" menu and a persistent "Our Brochure" link and "Log In" control in the header. Every page also repeats the same footer block (phone numbers, address line, and social icons) and, oddly, the same three payment-provider icons at the top of every page, all three of which link to the identical Pesapal payment URL — functionally one button rendered three times, which reads as a build error rather than an intentional design choice.
+
+## 3. Page-by-Page Findings
+
+**Home.** The hero image is a drone photograph of the property (filename `DJI_20250131080928_0028_D_K15DRN`), taken 31 January 2025 — genuinely the best single image on the site, and one that does not exist anywhere in the supplied project folder at usable resolution. Below the hero sits a partially built FAQ accordion with eight category labels (Amenities, Booking, Local Attractions, Long-Term Stays, Dining, Housekeeping, Facilities, Payment, Check-in/Check-out) but only one visible answer, under "Amenities." Whether the other seven categories contain hidden, functioning content that simply did not render in a text-based fetch, or whether they are empty placeholders, could not be confirmed without a live, interactive browser session — this is flagged as an open item rather than asserted as broken. The page also carries two content teaser blocks ("Rooms & Rates" and "Location" and "Activities") that duplicate, in short form, what their respective full pages already say.
+
+**Rooms & Rates.** Despite the page name, no rates, room types, or pricing appear anywhere on it. The visible content is two generic paragraphs describing the property as "a unique, relaxing and comfortable boutique residence nestled in mature tropical gardens," with no differentiation between room categories, no square-metre figures (which do appear in the printed brochure), and no way to see what a stay costs without phoning or emailing the property directly. For a page literally named "Rates," the absence of rates is the single most consequential content gap on the site.
+
+**Photo Gallery.** A flat grid of roughly a dozen images with no captions, no categorisation by room or space type, and no evident lightbox or filtering structure from the page markup. Several of the images in this grid are the same photographs already used elsewhere on the site (the "Welcome" and "Fig Tree Studios" images duplicate the About page's hero photography).
+
+**Activities.** Short, warm copy ("you may never see another guest... Relax on the rooftop overlooking the Indian Ocean and yacht club") paired with pool and gym photography. This is some of the better-written copy on the site and is a reasonable foundation to build from.
+
+**About Us.** Two short paragraphs. The first is a generic service-culture statement ("our team are a happy, bright and friendly collection of professionals"); the second is simply the word "Call us now to book." There is no history, no ownership story, no explanation of the name "Fig Tree," and no mention of the 2018 opening that the site's own blog references. This is a significant missed opportunity — the brand has a genuine origin story sitting unused in its own blog archive.
+
+**Contact.** Lists a phone number and two email addresses, but no street address, no embedded map, and no WhatsApp contact — a meaningful omission in a Tanzanian market where WhatsApp is a dominant booking and enquiry channel. The contact form itself displays a static success message ("Your details were sent successfully!") in the page's default state, before any form has been submitted, which will read to any visiting user as a bug.
+
+**Blog.** Exactly two posts exist in the entire history of the site: "Quite the auspicious opening.." (30 July 2018, announcing the May 2018 soft launch and August 2018 full opening) and "Benefits of Long-Term Stays in Serviced Apartments" (13 October 2025). A seven-year gap between the first and second post, followed by one recent post that explicitly targets the long-stay guest segment, suggests either a very recent, promising re-engagement with content marketing, or a one-off effort — this is worth asking the client about directly rather than assuming either way.
+
+## 4. Metadata and SEO Observations
+
+Meta titles and descriptions are present and reasonably well-formed on every page, and each includes a Google site-verification tag, indicating the site is indexed in Search Console. However, three of the six page titles literally contain the fragment "Www.figtree.co.tz" as visible text (for example, "Serviced Apartments | Masaki | Www.figtree.co.tz"), which reads as a copy-paste keyword-stuffing artifact rather than a deliberate SEO strategy, and would look unpolished in search results. The keyword meta tag on multiple pages is identical and generic ("Apartments, Masaki, Serviced, Www.figtree.co.tz"). No structured data (schema.org hotel or local-business markup), no `hreflang`/multilingual setup, and no visible blog tagging strategy beyond two categories ("Getting Started," "Your Community") that do not obviously map to the two posts that exist.
+
+## 5. Social and Off-Site Links
+
+The footer icon set is mislabeled: the icon rendered as "LinkedIn" and the icon rendered as "Facebook" both link to the identical Facebook page (`facebook.com/Fig-Tree-Residences-991957590976391`), and the icon rendered as "Twitter" links not to a Twitter/X profile at all but to the `figtree.co.tz` domain. There is no Instagram presence linked anywhere on the site, despite Instagram being the natural channel for the kind of lifestyle and location-driven imagery this property is positioned to use. The property does maintain a public Facebook page and appears across the major OTA channels — TripAdvisor (ranked 60th of 139 Dar es Salaam hotels, 4/5 rating), Booking.com, Hotels.com, Expedia, and Trip.com — all of which categorise it as a "hotel," which is a channel-level positioning mismatch worth noting given the property's own self-description as serviced apartments (see `BRAND_INTELLIGENCE.md`).
+
+## 6. What a Live, Interactive Pass Should Check Next
+
+This audit was performed by fetching rendered page text and cannot confirm mobile responsiveness, on-page load speed, actual functioning (or non-functioning) state of the FAQ accordion and contact form, or how the site behaves for a user actually attempting to book. Those checks belong in the next phase, alongside the open domain-ownership question above.
