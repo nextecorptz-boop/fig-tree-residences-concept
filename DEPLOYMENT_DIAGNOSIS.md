@@ -133,3 +133,33 @@ then trigger a redeploy.
 
 - Added `site/vercel.json` forcing `"framework": "nextjs"`.
 - No website code, design, or content was modified.
+
+## Post-fix note: the deployment fix is pushed but not yet live
+
+The fix commit (`5ebc6ae`) was pushed to GitHub successfully, but GitHub's
+Vercel commit status for it came back as `failure`:
+
+> Git author wisememecoin-svg must have access to the project on Vercel to
+> create deployments.
+
+Vercel's GitHub integration checks the **commit author's** GitHub identity
+against the Vercel team's member list before auto-deploying a push. The
+account that authored this commit (`wisememecoin-svg`) is not currently a
+recognized member of the `nextecorptz-boop's projects` Vercel team, so this
+push did **not** trigger a new deployment. (The very first commit deployed
+fine — that was almost certainly the initial repo import/connect, which is
+handled differently from ordinary pushes.)
+
+This means `site/vercel.json` is sitting on GitHub but has not been built
+or served yet. To get it live, do one of:
+
+1. Open the invite link Vercel attached to the failed check and accept it,
+   so this GitHub identity is authorized for future pushes:
+   `https://vercel.com/teams/invite?commitId=5ebc6ae90344bdcd4387e6f7d49d6dba02480272&gitUserLogin=wisememecoin-svg&origin=github&repoId=1303823777&teamId=team_e230x9mNoMkD0WyrH2Vhz7bg`
+2. Or, simpler: in the Vercel dashboard, go to the project → Deployments →
+   find commit `5ebc6ae` (or just click **Redeploy** on the latest one) —
+   a manually-triggered deploy from an authorized dashboard session isn't
+   blocked by the git-author check.
+
+Either way, once this commit is actually built and deployed, the
+`framework: "nextjs"` override should resolve the `NOT_FOUND` error.
