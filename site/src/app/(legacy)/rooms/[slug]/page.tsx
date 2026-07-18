@@ -2,9 +2,22 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container } from "@/components/primitives/container";
-import { ImageWithFallback } from "@/components/primitives/image-with-fallback";
 import { Button } from "@/components/primitives/button";
 import { getRoomBySlug, roomTypes } from "@/lib/content/rooms";
+import { RoomHero } from "@/components/legacy/room-hero";
+import { RoomGallery } from "@/components/legacy/room-gallery";
+
+/**
+ * Higgsfield micro-interaction clips exist for these two room types only —
+ * the full production library (37 shots) lives in
+ * deliverables/higgsfield_production/ for a future longer-form film, but the
+ * website itself only gets a clip where one has actually been generated and
+ * verified against its source photograph.
+ */
+const ROOM_HERO_VIDEO: Record<string, string> = {
+  "garden-view-studio": "/media/video/garden-view-studio.mp4",
+  "classic-residence": "/media/video/classic-residence.mp4",
+};
 
 export function generateStaticParams() {
   return roomTypes.map((room) => ({ slug: room.slug }));
@@ -27,46 +40,17 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
 
   return (
     <>
-      {/* Fullscreen hero */}
-      <div className="relative h-[70vh] min-h-[420px] w-full overflow-hidden">
-        <ImageWithFallback
-          src={room.heroImage.src}
-          alt={room.heroImage.alt}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 45%, rgba(0,0,0,0.55) 100%)" }}
-        />
-        <div className="absolute inset-x-0 bottom-0 p-(--space-lg)">
-          <Container>
-            <h1 className="font-display text-[32px] lg:text-[44px] leading-[1.1] text-white">{room.name}</h1>
-            <p className="mt-2 max-w-xl text-(length:--text-body-l) text-white/80">{room.differentiator}</p>
-          </Container>
-        </div>
-      </div>
+      {/* Fullscreen hero — parallax, gentle scale-on-scroll, and the sticky
+          title bar that pins once you've scrolled past it live in this
+          client component; markup/branding are otherwise unchanged. */}
+      <RoomHero name={room.name} differentiator={room.differentiator} image={room.heroImage} video={ROOM_HERO_VIDEO[room.slug]} />
 
       <Container className="py-(--space-4xl)">
       <div className="mt-2 grid lg:grid-cols-12 gap-10">
-        {/* RoomGallery — cross-fade only, no parallax (accuracy over atmosphere) */}
-        <div className="lg:col-span-7 grid grid-cols-2 gap-3">
-          {room.images.map((img, i) => (
-            <div key={img.src} className={`relative aspect-[4/3] ${i === 0 ? "col-span-2" : ""}`}>
-              <ImageWithFallback
-                src={img.src}
-                alt={img.alt}
-                fill
-                priority={i === 0}
-                className="object-cover"
-                sizes={i === 0 ? "(min-width: 1024px) 58vw, 100vw" : "(min-width: 1024px) 29vw, 50vw"}
-              />
-            </div>
-          ))}
-        </div>
+        {/* RoomGallery — still cross-fade only on the photographs themselves
+            (accuracy over atmosphere); the grid as a whole now drifts at a
+            slightly slower rate than the text column beside it. */}
+        <RoomGallery images={room.images} />
 
         {/* RoomFeatureList */}
         <div className="lg:col-span-4 lg:col-start-9">

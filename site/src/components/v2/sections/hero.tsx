@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { media } from "@/lib/v2/media";
 import { hero } from "@/lib/v2/copy";
 import { RevealLines } from "@/components/v2/primitives/reveal";
 import { CanopyFrame } from "@/components/v2/primitives/canopy-frame";
+import { LuxuryVideo } from "@/components/v2/primitives/luxury-video";
 import { Tracery } from "@/components/v2/primitives/tracery";
 import { BookingBar } from "@/components/v2/sections/booking-bar";
 
@@ -39,6 +39,7 @@ export function Hero() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
 
   const archY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
+  const archScale = useTransform(scrollYProgress, [0, 1], [1, 1.07]);
   const typeY = useTransform(scrollYProgress, [0, 1], ["0%", "-38%"]);
   const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
@@ -63,16 +64,14 @@ export function Hero() {
           so the garden goes full-bleed behind the type instead. No loss of sharpness
           either — at 390px wide the 1024px source is finally being downscaled. */}
       <div aria-hidden className="absolute inset-0 -z-[15] lg:hidden">
-        <Image
-          src={img.src}
+        <LuxuryVideo
+          src="/media/video/homepage-hero.mp4"
+          poster={{ src: img.src, blurDataURL: img.blurDataURL }}
           alt=""
-          fill
           priority
           sizes="100vw"
-          placeholder="blur"
-          blurDataURL={img.blurDataURL}
-          className={`object-cover object-center ${reduced ? "" : "motion-drift"}`}
-          style={{ filter: "saturate(0.85) brightness(0.7)" }}
+          className="absolute inset-0"
+          filterStyle={{ filter: "saturate(0.85) brightness(0.7)" }}
         />
         <div
           className="absolute inset-0"
@@ -163,17 +162,17 @@ export function Hero() {
             {/* The doorway is the crown of the tree. A border-radius can only
                 draw an arc; this silhouette is lobed and off-symmetric. */}
             <CanopyFrame variant="crown" className="h-full w-full">
-              <Image
-                src={img.src}
-                alt=""
-                fill
-                priority
-                sizes="480px"
-                placeholder="blur"
-                blurDataURL={img.blurDataURL}
-                className={`object-cover object-center ${reduced ? "" : "motion-drift"}`}
-                style={{ filter: "saturate(0.88) contrast(1.04) brightness(0.94)" }}
-              />
+              <motion.div className="absolute inset-0" style={{ scale: reduced ? 1 : archScale }}>
+                <LuxuryVideo
+                  src="/media/video/homepage-hero.mp4"
+                  poster={{ src: img.src, blurDataURL: img.blurDataURL }}
+                  alt=""
+                  priority
+                  sizes="480px"
+                  className="absolute inset-0"
+                  filterStyle={{ filter: "saturate(0.88) contrast(1.04) brightness(0.94)" }}
+                />
+              </motion.div>
               {/* Seat it into the ground rather than letting it stop dead. */}
               <div
                 aria-hidden

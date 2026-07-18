@@ -44,6 +44,9 @@ export function GardenExperience() {
   const leftY = useTransform(scrollYProgress, [0, 1], ["12%", "-12%"]);
   const rightY = useTransform(scrollYProgress, [0, 1], ["-10%", "14%"]);
   const lightO = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0.6, 0]);
+  // The slowest section on the page keeps the smallest scale throw — the
+  // garden should feel like it's settling, not zooming.
+  const gentleScale = useTransform(scrollYProgress, [0, 0.5, 1], [1.03, 1, 1.03]);
 
   const lounge = media("garden-lounge");
   /**
@@ -112,16 +115,18 @@ export function GardenExperience() {
             <Reveal y={40}>
               <motion.figure style={{ y: reduced ? 0 : leftY }} data-cursor="view" data-cursor-label="Garden lounge">
                 <CanopyFrame variant="window" hairlineOpacity={0.12} className="group aspect-[4/5] w-full bg-(--ft-canopy)">
-                  <Image
-                    src={lounge.src}
-                    alt={lounge.subject}
-                    fill
-                    sizes="(max-width: 1024px) 92vw, 30vw"
-                    placeholder="blur"
-                    blurDataURL={lounge.blurDataURL}
-                    className="object-cover"
-                    style={{ filter: "saturate(0.9) brightness(0.92)" }}
-                  />
+                  <motion.div className="absolute inset-[-5%]" style={{ scale: reduced ? 1 : gentleScale }}>
+                    <Image
+                      src={lounge.src}
+                      alt={lounge.subject}
+                      fill
+                      sizes="(max-width: 1024px) 92vw, 30vw"
+                      placeholder="blur"
+                      blurDataURL={lounge.blurDataURL}
+                      className="object-cover"
+                      style={{ filter: "saturate(0.9) brightness(0.92)" }}
+                    />
+                  </motion.div>
                   <BranchShadow seed={31} intensity={0.18} />
                 </CanopyFrame>
               </motion.figure>
@@ -157,16 +162,18 @@ export function GardenExperience() {
             <Reveal y={40} delay={0.1}>
               <motion.figure style={{ y: reduced ? 0 : rightY }} data-cursor="view" data-cursor-label="Through the trees">
                 <CanopyFrame variant="root" hairlineOpacity={0.12} className="group aspect-[4/5] w-full bg-(--ft-canopy)">
-                  <Image
-                    src={glimpse.src}
-                    alt={glimpse.subject}
-                    fill
-                    sizes="(max-width: 1024px) 92vw, 30vw"
-                    placeholder="blur"
-                    blurDataURL={glimpse.blurDataURL}
-                    className="object-cover object-[38%_center]"
-                    style={{ filter: "saturate(0.85) brightness(0.9)" }}
-                  />
+                  <motion.div className="absolute inset-[-5%]" style={{ scale: reduced ? 1 : gentleScale }}>
+                    <Image
+                      src={glimpse.src}
+                      alt={glimpse.subject}
+                      fill
+                      sizes="(max-width: 1024px) 92vw, 30vw"
+                      placeholder="blur"
+                      blurDataURL={glimpse.blurDataURL}
+                      className="object-cover object-[38%_center]"
+                      style={{ filter: "saturate(0.85) brightness(0.9)" }}
+                    />
+                  </motion.div>
                   <BranchShadow seed={47} intensity={0.18} />
                 </CanopyFrame>
               </motion.figure>

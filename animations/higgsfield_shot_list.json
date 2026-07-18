@@ -1,0 +1,716 @@
+{
+  "project": "Fig Tree Residences \u2014 Phase 2 Higgsfield Cinema Studio shot list",
+  "generated_from": "site/public/media/manifest.json (colour-corrected, verified-subject asset set)",
+  "global_rules": [
+    "The image is the source of truth. Animation may only reveal it through camera movement.",
+    "No shot exceeds 8 seconds.",
+    "No shot invents architecture, furniture, decor, or people not present in the source photograph.",
+    "Preferred movements only: slow dolly in, slow orbit, crane up, parallax reveal, focus pull."
+  ],
+  "shot_count": 37,
+  "shots": [
+    {
+      "shot_id": "facade-tree",
+      "source_image": "/media/facade-tree.jpg",
+      "subject": "The residence beneath the fig tree",
+      "source_resolution": "1024x678",
+      "camera_movement": "Crane up",
+      "movement_code": "crane_up",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal the full three-storey teal facade from garden level upward. No new architecture \u2014 the building is exactly as tall as this frame shows."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "rooftop-sunset",
+      "source_image": "/media/rooftop-sunset.jpg",
+      "subject": "Rooftop terrace at golden hour",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push gently toward the string-lit dining area. Do not add people or move furniture."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "garden-living-wall",
+      "source_image": "/media/garden-living-wall.jpg",
+      "subject": "Living wall and garden seating",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow orbit",
+      "movement_code": "slow_orbit",
+      "duration_seconds": 8,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "A gentle arc around the living wall and rattan chairs. Do not add foliage density beyond what exists."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "garden-lounge",
+      "source_image": "/media/garden-lounge.jpg",
+      "subject": "Garden lounge",
+      "source_resolution": "1024x683",
+      "camera_movement": "Parallax reveal",
+      "movement_code": "parallax_reveal",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal depth between foreground planting and the seating beyond."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "pool-wide",
+      "source_image": "/media/pool-wide.jpg",
+      "subject": "Swimming pool, wide",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow orbit",
+      "movement_code": "slow_orbit",
+      "duration_seconds": 8,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Arc along the pool edge toward the building. Water movement only \u2014 no new swimmers."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "pool-through-trees",
+      "source_image": "/media/pool-through-trees.jpg",
+      "subject": "Pool seen through the trees",
+      "source_resolution": "1024x683",
+      "camera_movement": "Parallax reveal",
+      "movement_code": "parallax_reveal",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal the pool through the tree branches in the foreground."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "breakfast-garden",
+      "source_image": "/media/breakfast-garden.jpg",
+      "subject": "Breakfast laid in the garden",
+      "source_resolution": "1024x610",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus from the coffee cups to the fruit basket. Keep the tablecloth pattern unchanged."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "gym",
+      "source_image": "/media/gym.jpg",
+      "subject": "Gym",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the treadmill and spin bike row. No new equipment, no people."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "living-balcony",
+      "source_image": "/media/living-balcony.jpg",
+      "subject": "Apartment living room and balcony",
+      "source_resolution": "1024x683",
+      "camera_movement": "Parallax reveal",
+      "movement_code": "parallax_reveal",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal the balcony through the sliding door beyond the sofa and sailboat painting."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "living-desk",
+      "source_image": "/media/living-desk.jpg",
+      "subject": "Apartment living room with desk",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the desk and TV console."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "lounge-dim",
+      "source_image": "/media/lounge-dim.jpg",
+      "subject": "Interior lounge, low light",
+      "source_resolution": "1024x768",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the exit doors, low evening light held constant."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "kitchenette-bar",
+      "source_image": "/media/kitchenette-bar.jpg",
+      "subject": "Kitchenette with breakfast bar",
+      "source_resolution": "1024x683",
+      "camera_movement": "Parallax reveal",
+      "movement_code": "parallax_reveal",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal the breakfast bar through the counter-to-cabinet depth."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "kitchen-detail",
+      "source_image": "/media/kitchen-detail.jpg",
+      "subject": "Kitchen counter detail",
+      "source_resolution": "1024x683",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus from the sunflowers to the coffee maker."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "logo-sign",
+      "source_image": "/media/logo-sign.jpg",
+      "subject": "Fig Tree signboard",
+      "source_resolution": "858x1326",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus onto the painted sign lettering. Do not vectorise or alter the paint texture."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "staff-portrait",
+      "source_image": "/media/staff-portrait.jpg",
+      "subject": "Fig Tree team member",
+      "source_resolution": "1054x703",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "A gentle, respectful push. No change to expression or pose \u2014 this is the only human subject in the library."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "bedroom-arch-palm",
+      "source_image": "/media/bedroom-arch-palm.jpg",
+      "subject": "Bedroom, arched palm headboard",
+      "source_resolution": "1054x703",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the carved palm-motif headboard. Do not alter the bedspread pattern or add furniture."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "bedroom-white-arch",
+      "source_image": "/media/bedroom-white-arch.jpg",
+      "subject": "Bedroom, white arched headboard",
+      "source_resolution": "1054x703",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the white arch headboard. Keep the throw pillows in place."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "bedroom-arch-green",
+      "source_image": "/media/bedroom-arch-green.jpg",
+      "subject": "Bedroom, green bedspread",
+      "source_resolution": "1054x703",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus from the rug to the headboard."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "bedroom-blue",
+      "source_image": "/media/bedroom-blue.jpg",
+      "subject": "Bedroom, blue cushion",
+      "source_resolution": "967x703",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the framed pier photograph above the bed."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "kitchenette-full",
+      "source_image": "/media/kitchenette-full.jpg",
+      "subject": "Kitchenette, full view",
+      "source_resolution": "1054x703",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push from the sofa toward the kitchenette. No new appliances."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "living-cream",
+      "source_image": "/media/living-cream.jpg",
+      "subject": "Living room, cream sofas",
+      "source_resolution": "1054x703",
+      "camera_movement": "Parallax reveal",
+      "movement_code": "parallax_reveal",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal the archway-to-kitchenette depth beyond the cream sofas."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "living-cream-desk",
+      "source_image": "/media/living-cream-desk.jpg",
+      "subject": "Living room with writing desk",
+      "source_resolution": "1054x703",
+      "camera_movement": "Slow orbit",
+      "movement_code": "slow_orbit",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Arc from the sofa to the desk corner."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "dining-bar-detail",
+      "source_image": "/media/dining-bar-detail.jpg",
+      "subject": "Rooftop bar, wine service detail",
+      "source_resolution": "975x768",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus from the orchids in the foreground to the wine rack behind. No new bottles or glassware."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "rooftop-dusk-guests",
+      "source_image": "/media/rooftop-dusk-guests.jpg",
+      "subject": "Rooftop restaurant at dusk, guests seated",
+      "source_resolution": "1024x683",
+      "camera_movement": "Parallax reveal",
+      "movement_code": "parallax_reveal",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal the seated guests and bar through layered depth. Do not alter the guests' poses or add faces where none are visible."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "rooftop-golden-hour",
+      "source_image": "/media/rooftop-golden-hour.jpg",
+      "subject": "Rooftop terrace, golden hour, tables set",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the sunburst through the tree canopy. Keep the empty tables empty."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "living-room-alt-2",
+      "source_image": "/media/living-room-alt-2.jpg",
+      "subject": "Living room, alternate unit",
+      "source_resolution": "1024x683",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus from the sailboat painting to the sofa."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "living-room-alt-3",
+      "source_image": "/media/living-room-alt-3.jpg",
+      "subject": "Living room, alternate unit",
+      "source_resolution": "1024x768",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the window and curtains."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "pool-garden-angle",
+      "source_image": "/media/pool-garden-angle.jpg",
+      "subject": "Swimming pool, garden angle",
+      "source_resolution": "1024x683",
+      "camera_movement": "Crane up",
+      "movement_code": "crane_up",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rise from poolside grass to the garden wall beyond."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "reception-lounge",
+      "source_image": "/media/reception-lounge.jpg",
+      "subject": "Reception lounge seating",
+      "source_resolution": "1024x683",
+      "camera_movement": "Parallax reveal",
+      "movement_code": "parallax_reveal",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Reveal the teal sofa and side table through the doorway depth."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "reception-desk",
+      "source_image": "/media/reception-desk.jpg",
+      "subject": "Reception desk",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the desk. Keep the framed portraits on the wall exactly as hung."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "reception-detail",
+      "source_image": "/media/reception-detail.jpg",
+      "subject": "Reception, alternate angle",
+      "source_resolution": "1024x744",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus from the low table to the seating beyond."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "bedroom-classic-attic",
+      "source_image": "/media/bedroom-classic-attic.jpg",
+      "subject": "Classic Residence, top-floor bedroom",
+      "source_resolution": "1024x683",
+      "camera_movement": "Crane up",
+      "movement_code": "crane_up",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rise to reveal the sloped ceiling line \u2014 a real structural feature, not a distortion."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "bathroom-full-view",
+      "source_image": "/media/bathroom-full-view.jpg",
+      "subject": "Bathroom, full view",
+      "source_resolution": "513x768",
+      "camera_movement": "Focus pull",
+      "movement_code": "focus_pull",
+      "duration_seconds": 5,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Rack focus from the potted plants to the towel rail. No new fixtures."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "garden-lounge-bench",
+      "source_image": "/media/garden-lounge-bench.jpg",
+      "subject": "Garden lounge bench seating",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the bench and side table. Keep the magazine and glass exactly as placed."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "pool-exterior-1",
+      "source_image": "/media/pool-exterior-1.jpg",
+      "subject": "Pool and building exterior",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the building facade beyond the pool."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "pool-exterior-2",
+      "source_image": "/media/pool-exterior-2.jpg",
+      "subject": "Pool and building exterior, alternate",
+      "source_resolution": "1024x683",
+      "camera_movement": "Slow orbit",
+      "movement_code": "slow_orbit",
+      "duration_seconds": 7,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Arc around the pool signage and steps."
+      ],
+      "max_duration_seconds": 8
+    },
+    {
+      "shot_id": "bedroom-classic-lighthouse",
+      "source_image": "/media/bedroom-classic-lighthouse.jpg",
+      "subject": "Classic Residence bedroom",
+      "source_resolution": "1024x649",
+      "camera_movement": "Slow dolly in",
+      "movement_code": "slow_dolly_in",
+      "duration_seconds": 6,
+      "style": "Luxury hospitality marketing \u2014 quiet, controlled, no overt drama",
+      "grading": "Match public/media colour-corrected source; do not re-introduce yellow-green cast",
+      "constraints": [
+        "Do not invent furniture, windows, decor, or room geometry",
+        "Do not add or remove people",
+        "Do not change wall colour, floor material, or fixed architecture",
+        "Camera motion only \u2014 the room itself must not appear to move or warp",
+        "Push toward the framed lighthouse print. Do not swap the artwork."
+      ],
+      "max_duration_seconds": 8
+    }
+  ]
+}

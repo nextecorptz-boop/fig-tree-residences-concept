@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { media, type MediaKey } from "@/lib/v2/media";
 import { rooms } from "@/lib/v2/copy";
 import { Reveal, RevealGroup, RevealItem } from "@/components/v2/primitives/reveal";
@@ -100,10 +100,18 @@ function RoomCard({
   onLeave: () => void;
 }) {
   const img = media(card.key);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const reduced = useReducedMotion();
+  const { scrollYProgress } = useScroll({ target: cardRef, offset: ["start end", "end start"] });
+  // Large room images drift a few percent on scroll and settle into a very
+  // slight zoom — subtle enough to read as "alive," not as an effect.
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ["-4%", "4%"]);
+  const scrollScale = useTransform(scrollYProgress, [0, 0.5, 1], [1.04, 1, 1.04]);
 
   return (
     <Reveal delay={index * 0.07} y={36}>
       <motion.figure
+        ref={cardRef}
         onMouseEnter={onEnter}
         onMouseLeave={onLeave}
         animate={{ opacity: dimmed ? 0.42 : 1 }}
@@ -120,15 +128,20 @@ function RoomCard({
           hairlineOpacity={0.14}
           className="aspect-[3/4] w-full bg-(--ft-canopy)"
         >
-          <Image
-            src={img.src}
-            alt={img.subject}
-            fill
-            sizes="(max-width: 640px) 46vw, (max-width: 1024px) 46vw, 22vw"
-            placeholder="blur"
-            blurDataURL={img.blurDataURL}
-            className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.02]"
-          />
+          <motion.div
+            className="absolute inset-[-6%]"
+            style={reduced ? undefined : { y: parallaxY, scale: scrollScale }}
+          >
+            <Image
+              src={img.src}
+              alt={img.subject}
+              fill
+              sizes="(max-width: 640px) 46vw, (max-width: 1024px) 46vw, 22vw"
+              placeholder="blur"
+              blurDataURL={img.blurDataURL}
+              className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.02]"
+            />
+          </motion.div>
           <div
             aria-hidden
             className="absolute inset-0 transition-opacity duration-700 ease-in-out group-hover:opacity-70"

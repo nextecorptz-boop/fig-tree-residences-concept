@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { media } from "@/lib/v2/media";
 import { pool } from "@/lib/v2/copy";
 import { Reveal, RevealGroup, RevealItem } from "@/components/v2/primitives/reveal";
+import { LuxuryVideo } from "@/components/v2/primitives/luxury-video";
 
 /**
  * 05 — Pool & wellness. The page's one full-bleed moment.
@@ -22,6 +22,7 @@ export function Pool() {
   const reduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1.06, 1, 1.06]);
 
   const img = media("pool-wide");
 
@@ -29,16 +30,14 @@ export function Pool() {
     <section ref={ref} className="relative isolate">
       {/* Cinematic band */}
       <div className="grain vignette relative h-[clamp(420px,78vh,760px)] w-full overflow-hidden bg-(--ft-abyss)">
-        <motion.div style={{ y: reduced ? 0 : y }} className="absolute inset-[-8%]">
-          <Image
-            src={img.src}
+        <motion.div style={{ y: reduced ? 0 : y, scale: reduced ? 1 : scale }} className="absolute inset-[-8%]">
+          <LuxuryVideo
+            src="/media/video/pool.mp4"
+            poster={{ src: img.src, blurDataURL: img.blurDataURL }}
             alt={img.subject}
-            fill
             sizes="100vw"
-            placeholder="blur"
-            blurDataURL={img.blurDataURL}
-            className="object-cover object-center"
-            style={{ filter: "saturate(0.82) contrast(1.06) brightness(0.82)" }}
+            className="absolute inset-0"
+            filterStyle={{ filter: "saturate(0.82) contrast(1.06) brightness(0.82)" }}
           />
         </motion.div>
 
