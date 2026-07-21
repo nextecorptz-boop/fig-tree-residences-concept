@@ -56,44 +56,18 @@ export const rooms = {
   ],
   cards: [
     {
+      slug: "garden-view-studio",
+      href: "/rooms/garden-view-studio",
       key: "bedroom-arch-palm" as const,
-      name: "The Arched Studio",
-      note: "Palm-carved headboard, morning light from the east.",
+      name: "Garden View Studio",
+      note: "Palm-carved headboard, morning light from the east. Private balcony onto the garden.",
     },
     {
-      key: "bedroom-white-arch" as const,
-      name: "The White Room",
-      note: "Softest of the set. Linen, timber, and very little else.",
-    },
-    {
-      key: "bedroom-arch-green" as const,
-      name: "The Green Room",
-      note: "Same carved headboard, a cooler palette next door.",
-    },
-    {
+      slug: "classic-residence",
+      href: "/rooms/classic-residence",
       key: "bedroom-classic-lighthouse" as const,
       name: "Classic Residence",
-      note: "The property's original finish, toward the garden's older trees.",
-    },
-    {
-      key: "kitchenette-bar" as const,
-      name: "The Kitchenette",
-      note: "Cook for yourself. We will do the shopping if you would rather not.",
-    },
-    {
-      key: "living-balcony" as const,
-      name: "The Balcony",
-      note: "Where most guests end up, most evenings.",
-    },
-    {
-      key: "bathroom-full-view" as const,
-      name: "The Bathroom",
-      note: "Rain shower, in every apartment.",
-    },
-    {
-      key: "bedroom-classic-attic" as const,
-      name: "The Top Floor",
-      note: "A quieter room, set under the roofline.",
+      note: "The property's original finish, quieter and set toward the garden's older trees.",
     },
   ],
 };

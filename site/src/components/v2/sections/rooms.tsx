@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
@@ -13,14 +14,8 @@ import { BranchDivider } from "@/components/v2/primitives/branch-divider";
 /**
  * 03 — The apartments.
  *
- * Canopy-framed cards in a row, each opening on hover — the same crown as the
- * hero's doorway, alternating silhouettes so no two are identical.
- *
- * These are not room *types*. The property sells ~24 units at a single 43 m²
- * spec and the library contains one clearly differentiated older room and two
- * newer arched-headboard rooms — not enough to honestly present four distinct
- * categories. So the cards are framed as views of one apartment rather than as
- * a menu to choose from, which is also what the brochure actually claims.
+ * Canopy-framed residence cards in an intentional 2-column layout, each
+ * linking directly to its verified room detail experience.
  */
 export function Rooms() {
   const [active, setActive] = useState<number | null>(null);
@@ -53,11 +48,11 @@ export function Rooms() {
           </div>
         </div>
 
-        {/* Cards */}
-        <div className="mt-[clamp(3rem,7vh,5rem)] grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+        {/* 2-Card Editorial Layout */}
+        <div className="mt-[clamp(3rem,7vh,5rem)] grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
           {rooms.cards.map((card, i) => (
             <RoomCard
-              key={card.key}
+              key={card.slug}
               card={card}
               index={i}
               dimmed={active !== null && active !== i}
@@ -93,7 +88,7 @@ function RoomCard({
   onEnter,
   onLeave,
 }: {
-  card: { key: MediaKey; name: string; note: string };
+  card: { key: MediaKey; name: string; note: string; href: string; slug: string };
   index: number;
   dimmed: boolean;
   onEnter: () => void;
@@ -103,68 +98,70 @@ function RoomCard({
   const cardRef = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: cardRef, offset: ["start end", "end start"] });
-  // Large room images drift a few percent on scroll and settle into a very
-  // slight zoom — subtle enough to read as "alive," not as an effect.
-  const parallaxY = useTransform(scrollYProgress, [0, 1], ["-4%", "4%"]);
-  const scrollScale = useTransform(scrollYProgress, [0, 0.5, 1], [1.04, 1, 1.04]);
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ["-3%", "3%"]);
+  const scrollScale = useTransform(scrollYProgress, [0, 0.5, 1], [1.03, 1, 1.03]);
 
   return (
-    <Reveal delay={index * 0.07} y={36}>
-      <motion.figure
-        ref={cardRef}
-        onMouseEnter={onEnter}
-        onMouseLeave={onLeave}
-        animate={{ opacity: dimmed ? 0.42 : 1 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="group relative cursor-pointer"
-        data-cursor="view"
-        data-cursor-label={card.name}
+    <Reveal delay={index * 0.12} y={36}>
+      <Link
+        href={card.href}
+        className="group relative block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--ft-verdigris) focus-visible:ring-offset-4 focus-visible:ring-offset-(--ft-forest) rounded-sm"
+        aria-label={`Explore ${card.name}`}
       >
-        {/* Alternating crowns and seeds — four cards, four silhouettes, so a row
-            of frames reads as four views of one tree rather than one shape
-            stamped out four times. */}
-        <CanopyFrame
-          variant={index % 2 === 0 ? "window" : "root"}
-          hairlineOpacity={0.14}
-          className="aspect-[3/4] w-full bg-(--ft-canopy)"
+        <motion.figure
+          ref={cardRef}
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}
+          animate={{ opacity: dimmed ? 0.5 : 1 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="relative cursor-pointer"
+          data-cursor="view"
+          data-cursor-label={card.name}
         >
-          <motion.div
-            className="absolute inset-[-6%]"
-            style={reduced ? undefined : { y: parallaxY, scale: scrollScale }}
+          <CanopyFrame
+            variant={index % 2 === 0 ? "window" : "root"}
+            hairlineOpacity={0.16}
+            className="aspect-[4/3] w-full bg-(--ft-canopy) sm:aspect-[16/11]"
           >
-            <Image
-              src={img.src}
-              alt={img.subject}
-              fill
-              sizes="(max-width: 640px) 46vw, (max-width: 1024px) 46vw, 22vw"
-              placeholder="blur"
-              blurDataURL={img.blurDataURL}
-              className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.02]"
+            <motion.div
+              className="absolute inset-[-6%]"
+              style={reduced ? undefined : { y: parallaxY, scale: scrollScale }}
+            >
+              <Image
+                src={img.src}
+                alt={img.subject}
+                fill
+                sizes="(max-width: 768px) 92vw, 46vw"
+                placeholder="blur"
+                blurDataURL={img.blurDataURL}
+                className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.03]"
+              />
+            </motion.div>
+            <div
+              aria-hidden
+              className="absolute inset-0 transition-opacity duration-700 ease-in-out group-hover:opacity-85"
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent 30%, color-mix(in srgb, var(--ft-abyss) 92%, transparent) 100%)",
+              }}
             />
-          </motion.div>
-          <div
-            aria-hidden
-            className="absolute inset-0 transition-opacity duration-700 ease-in-out group-hover:opacity-70"
-            style={{
-              background:
-                "linear-gradient(180deg, transparent 40%, color-mix(in srgb, var(--ft-abyss) 88%, transparent) 100%)",
-            }}
-          />
-          <BranchShadow seed={index * 13 + 5} intensity={0.2} />
+            <BranchShadow seed={index * 13 + 5} intensity={0.25} />
 
-          {/* The note rises on hover */}
-          <div className="absolute inset-x-0 bottom-0 z-10 overflow-hidden p-5">
-            <p className="font-display text-[1.25rem] leading-tight font-light text-(--ft-cream)">
-              {card.name}
-            </p>
-            <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:grid-rows-[1fr]">
-              <p className="overflow-hidden text-[0.8125rem] leading-relaxed font-light text-(--ft-cream)/0 transition-colors duration-700 group-hover:text-(--ft-cream)/70">
-                <span className="block pt-2">{card.note}</span>
+            <div className="absolute inset-x-0 bottom-0 z-10 p-6 lg:p-8">
+              <p className="font-display text-[1.5rem] leading-tight font-light text-(--ft-cream) lg:text-[1.85rem]">
+                {card.name}
               </p>
+              <p className="mt-2 text-[0.875rem] leading-relaxed font-light text-(--ft-cream)/70 max-w-[42ch]">
+                {card.note}
+              </p>
+              <div className="mt-4 flex items-center gap-2 text-[0.8125rem] font-light text-(--ft-verdigris) transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-1.5">
+                <span className="tracking-wide">Explore residence</span>
+                <span aria-hidden className="text-[0.9375rem]">→</span>
+              </div>
             </div>
-          </div>
-        </CanopyFrame>
-      </motion.figure>
+          </CanopyFrame>
+        </motion.figure>
+      </Link>
     </Reveal>
   );
 }
